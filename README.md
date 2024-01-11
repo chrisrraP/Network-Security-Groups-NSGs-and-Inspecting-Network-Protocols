@@ -61,7 +61,7 @@ Head back into the Azure portal, type "Network Security Group" into the search b
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-In the wireshark window, press the stop button. Type "ssh" in the search bar and hit enter. Continue without saving. In Powershell, type in "ssh" and press enter. Next, type in your VM2 username @ VM2 (ex: user@VM2). You will be prompted to enter your password. Enter your VM2 password and you will see a large amount of traffic in Wireshark.
+In the Wireshark window, press the stop button. Type "ssh" in the search bar and hit enter. Continue without saving. In Powershell, type in "ssh" and press enter. Next, type in your VM2 username @ VM2 (ex: user@VM2). You will be prompted to enter your password. Enter your VM2 password and you will see a large amount of traffic in Wireshark. After observing, type "exit" in powershell to revert back to VM1.
 </p>
 <br />
 
@@ -72,7 +72,7 @@ In the wireshark window, press the stop button. Type "ssh" in the search bar and
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+In Wireshark, filter DHCP traffic by typing in "DHCP" in the search bar and press enter. Continue without saving. In Powershell, use command "nslookup" followed by a space and any website of your choice. Observe all the traffic created.
 </p>
 <br />
 
@@ -83,6 +83,6 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Lastly, to observe the Remote Desktop Protocol (RDP), you will type "tcp.port==3389" into the Wireshark search bar. This will display the real-time traffic that occurs between both computers.
 </p>
 <br />
