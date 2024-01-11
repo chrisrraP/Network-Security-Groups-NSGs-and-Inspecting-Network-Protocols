@@ -47,7 +47,7 @@ Set up two virtual machines within Microsoft Azure. Reference https://github.com
 <img src="https://github.com/chrisrraP/Network-Security-Groups-NSGs-and-Inspecting-Network-Protocols/blob/main/VM2%20Inbound%20Security.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://github.com/chrisrraP/Network-Security-Groups-NSGs-and-Inspecting-Network-Protocols/blob/main/Ping%20to%20VM2%20Timed%20Out.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
 Head back into the Azure portal, type "Network Security Group" into the search bar and select that option. There may be an instance where two groups were created for VM2. You will need to apply these steps to both groups. Select VM2nsg, select "inbound rules" and select "add". Toggle the protocol to "ICMP" and the "allow" action to "deny". The priority will be changed to "200" in order for it to be recognized before other inbound rules. We'll name it "DENY_PING_FROM_ANYWHERE". Click "add" and go back to VM1. Observe the ICMP traffic on wireshark and Powershell. It will have timed out. Switch back to Azure and edit the rule back to "allow". Go to VM1 to observe the requests being received again.
