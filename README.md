@@ -61,7 +61,7 @@ Head back into the Azure portal, type "Network Security Group" into the search b
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-In the wireshark window, press the stop button. Type in "ssh" and hit enter. Continue without saving. In Powershell, type in "ssh" and press enter. Next, type in your VM2 username @ VM2 (ex: user@VM2). You will be prompted to enter your password. Enter your VM2 password and you will see a large amount of traffic in Wireshark.
+In the wireshark window, press the stop button. Type "ssh" in the search bar and hit enter. Continue without saving. In Powershell, type in "ssh" and press enter. Next, type in your VM2 username @ VM2 (ex: user@VM2). You will be prompted to enter your password. Enter your VM2 password and you will see a large amount of traffic in Wireshark.
 </p>
 <br />
 
